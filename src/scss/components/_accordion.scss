@@ -1,0 +1,18 @@
+@use "../abstracts/" as *;
+
+.accordion {
+  > *:where(:not(:last-child)) {
+    border-bottom: solid $color-primary-100;
+    padding-block: $size-6;
+  }
+
+  > *:last-child {
+    padding-top: $size-6;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

@@ -1,19 +1,9 @@
 @use "../abstracts" as *;
 
 :root {
-  @each $color, $shade-map in $active-theme {
+  @each $color, $shade-map in $light {
     @each $shade, $value in $shade-map {
       --#{$color}-#{$shade}: #{$value};
-    }
-  }
-
-  @if ($enable-media-query-dark-mode) {
-    @media (prefers-color-scheme: dark) {
-      @each $color, $shade-map in $dark {
-        @each $shade, $value in $shade-map {
-          --#{$color}-#{$shade}: #{$value};
-        }
-      }
     }
   }
 

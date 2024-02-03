@@ -14,4 +14,9 @@
   &__heading {
     @include heading($card-heading-font-size, $card-heading-color-default);
   }
+
+  &__header {
+    display: flex;
+    gap: $size-6;
+  }
 }

@@ -1,0 +1,7 @@
+@use "../abstracts/" as *;
+
+.background__image {
+  position: absolute;
+  width: 100%;
+  z-index: -1000;
+}
