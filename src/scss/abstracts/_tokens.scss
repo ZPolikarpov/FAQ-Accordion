@@ -11,7 +11,7 @@ $color-text-interactive-hover: $color-primary-300;
 // set to 0 to disable
 $letter-spacing-loose: 0;
 
-$border-radius-1: $size-4;
+$border-radius-1: clamp($size-2, -0.333rem + 3.556vw, $size-4);
 
 $box-shadow-1: 0px 6px 5px rgb(0, 0, 0, 0.012),
   0px 22px 18px rgb(0, 0, 0, 0.018), 0px 100px 80px rgb(0, 0, 0, 0.03);
@@ -62,7 +62,7 @@ $container-max-width-wide: 75rem;
 
 // cards
 $card-flow-spacing: $size-2;
-$card-padding: $size-8;
+$card-padding: clamp($size-6, -0.167rem + 7.111vw, $size-8);
 $card-shadow: $box-shadow-1;
 $card-border-radius: $border-radius-1;
 $card-background-default: $color-neutral-000;

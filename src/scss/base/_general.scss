@@ -8,4 +8,11 @@ body {
   background-color: $body-background-color;
   line-height: $body-line-height;
   height: 100vh;
+  background-image: url("../assets/images/background-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: auto 29vh;
+
+  @include mq(small) {
+    background-size: contain;
+  }
 }

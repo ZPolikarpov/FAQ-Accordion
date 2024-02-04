@@ -4,6 +4,9 @@
   --padding: #{$container-min-margin-inline} * 2;
   --max-width: #{$container-max-width};
 
+  display: grid;
+  align-items: center;
+
   width: min(100% - var(--padding), var(--max-width));
   margin-inline: auto;
   height: 100vh;

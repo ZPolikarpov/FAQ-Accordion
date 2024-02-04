@@ -34,6 +34,7 @@
       display: none;
       padding-top: $size-6;
       line-height: $body-line-height;
+      font-size: $font-size-400;
 
       &[aria-hidden="false"] {
         display: block;

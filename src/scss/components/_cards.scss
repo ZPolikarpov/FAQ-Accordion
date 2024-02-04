@@ -18,5 +18,13 @@
   &__header {
     display: flex;
     gap: $size-6;
+
+    img {
+      width: 24px;
+
+      @include mq(small) {
+        width: 40px;
+      }
+    }
   }
 }
