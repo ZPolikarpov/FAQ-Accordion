@@ -78,11 +78,12 @@ function Accordion() {
 		<div className="accordion">
 			{items.map((item, index) => (
 				<div className="accordion__item" key={item.id}>
-					<div className="accordion__item__heading" onKeyDown={handleKeyPress} tabIndex={0} onClick={() => handleExpand(index)} onFocus={() => setCursor(index)}>
+					<div className="accordion__item__heading" aria-controls={"content-"+index} aria-expanded={item.expanded}
+								onKeyDown={handleKeyPress} tabIndex={0} onClick={() => handleExpand(index)} onFocus={() => setCursor(index)}>
 						<h2 className="heading-2">{item.heading}</h2>
 						<img src={item.expanded ? minus : plus} />
 					</div>
-					<div className="accordion__item__content" data-expanded={item.expanded}>
+					<div className="accordion__item__content" aria-hidden={!item.expanded} id={"content-"+index}>
 						<p>{item.content}</p>
 					</div>
 				</div>

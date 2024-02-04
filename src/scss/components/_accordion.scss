@@ -23,20 +23,10 @@
       justify-content: space-between;
       cursor: pointer;
 
-      &:is(:hover) {
+      &:is(:hover, :focus) {
         h2 {
           color: $color-text-interactive-hover;
         }
-      }
-      &:is(:focus-visible, [data-focused="false"]) {
-        outline: -webkit-focus-ring-color auto 0;
-      }
-      &:is(:focus, [data-focused="true"]) {
-        h2 {
-          color: $color-text-interactive-hover;
-        }
-
-        outline: -webkit-focus-ring-color auto 1px;
       }
     }
 
@@ -45,7 +35,7 @@
       padding-top: $size-6;
       line-height: $body-line-height;
 
-      &[data-expanded="true"] {
+      &[aria-hidden="false"] {
         display: block;
       }
     }
