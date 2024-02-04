@@ -12,19 +12,19 @@ const arAccordeonItems = [
 		id: 1,
 		heading: "Is Frontend Mentor free?",
 		expanded: false,
-		content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsum ratione saepe voluptatum iure maxime. Hic fugiat magnam, odit maiores velit ea ipsa rerum voluptatum dolorem suscipit obcaecati ducimus est."
+		content: "Absolutely! Frontend Mentor is your free gateway to web development mastery, offering a treasure trove of projects and resources."
 	},
 	{
 		id: 2,
 		heading: "Can I use Frontend Mentor projects in my portfolio?",
 		expanded: false,
-		content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsum ratione saepe voluptatum iure maxime. Hic fugiat magnam, odit maiores velit ea ipsa rerum voluptatum dolorem suscipit obcaecati ducimus est."
+		content: "Showcase your brilliance! Frontend Mentor projects are not just free, but also yours to proudly flaunt in your dazzling portfolio."
 	},
 	{
 		id: 3,
 		heading: "How can I get help if I'm stuck on a challenge?",
 		expanded: false,
-		content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsum ratione saepe voluptatum iure maxime. Hic fugiat magnam, odit maiores velit ea ipsa rerum voluptatum dolorem suscipit obcaecati ducimus est."
+		content: "Stuck? Fear not! Dive into a supportive community, mentorship, and detailed solutions at Frontend Mentor. Conquer challenges and thrive!"
 	},
 ]
 

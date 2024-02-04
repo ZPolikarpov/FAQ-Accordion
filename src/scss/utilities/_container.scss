@@ -4,6 +4,8 @@
   --padding: #{$container-min-margin-inline} * 2;
   --max-width: #{$container-max-width};
 
+  padding-block: $size-8;
+
   display: grid;
   align-items: center;
 
