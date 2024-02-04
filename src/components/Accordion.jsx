@@ -1,6 +1,5 @@
 import { useState } from "react";
-import plus from "../assets/images/icon-plus.svg"
-import minus from "../assets/images/icon-minus.svg"
+import AccordionItem from "./AccordionItem";
 
 const arAccordeonItems = [
 	{
@@ -28,7 +27,6 @@ const arAccordeonItems = [
 		content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsum ratione saepe voluptatum iure maxime. Hic fugiat magnam, odit maiores velit ea ipsa rerum voluptatum dolorem suscipit obcaecati ducimus est."
 	},
 ]
-
 
 function Accordion() {
 	const [items, setItems] = useState(() => arAccordeonItems)
@@ -77,16 +75,9 @@ function Accordion() {
 	return (
 		<div className="accordion">
 			{items.map((item, index) => (
-				<div className="accordion__item" key={item.id}>
-					<div className="accordion__item__heading" aria-controls={"content-"+index} aria-expanded={item.expanded}
-								onKeyDown={handleKeyPress} tabIndex={0} onClick={() => handleExpand(index)} onFocus={() => setCursor(index)}>
-						<h2 className="heading-2">{item.heading}</h2>
-						<img src={item.expanded ? minus : plus} />
-					</div>
-					<div className="accordion__item__content" aria-hidden={!item.expanded} id={"content-"+index}>
-						<p>{item.content}</p>
-					</div>
-				</div>
+				<AccordionItem key={index} item={item} index={index} onKeyDown={handleKeyPress} onClick={() => handleExpand(index)} onFocus={() => setCursor(index)}>
+					<p>{item.content}</p>
+				</AccordionItem>
 			))}
 
 		</div>

@@ -7,11 +7,11 @@ function App() {
 
 	return (
 		<>
-			<img src={background} alt="" className="background__image"/>
+			<img src={background} className="background__image"/>
 			<main className="container">
 				<div className="card">
 					<div className="card__header">
-						<img src={star} alt="" />
+						<img src={star} />
 						<h1 className="card__heading">FAQs</h1>
 					</div>
 
