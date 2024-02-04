@@ -1,6 +1,11 @@
-# Project Title
+# Frontend Mentor - Accordion solution
 
-A brief description of what this project does and who it's for\
+This is a solution to the Accordion challenge on Frontend Mentor.
+
+### Links
+
+Solution URL: [Solution - Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-recipe-page-using-scss-UbI1QWj-Nr)\
+Live Site URL: [Live Site](https://zpolikarpov.github.io/FAQ-Accordion/)\
 \
 To run the project:
 
@@ -48,3 +53,7 @@ The project uses Vite to create a React app. Currently Vite is just used to crea
 ### React
 
 Not used for anything specific as of now. I will start learning and working with React later down the line, so I figured I might as well include it in my template.
+
+# Author
+
+Frontend Mentor - [@ZPolikarpov](https://www.frontendmentor.io/profile/ZPolikarpov)
