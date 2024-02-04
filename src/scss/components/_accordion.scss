@@ -21,12 +21,22 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      cursor: pointer;
 
       &:is(:hover) {
-        cursor: pointer;
         h2 {
           color: $color-text-interactive-hover;
         }
+      }
+      &:is(:focus-visible, [data-focused="false"]) {
+        outline: -webkit-focus-ring-color auto 0;
+      }
+      &:is(:focus, [data-focused="true"]) {
+        h2 {
+          color: $color-text-interactive-hover;
+        }
+
+        outline: -webkit-focus-ring-color auto 1px;
       }
     }
 
